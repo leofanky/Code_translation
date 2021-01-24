@@ -1,0 +1,161 @@
+Hello World & Variables And Constants
+Swift:
+var myVariable = 42
+myVariable = 50
+let myConstant = 42
+let oranges = 5
+print("Hello, world!")
+let fruitSummary = "I have \(myConstant + oranges)" + "pieces of fruit."
+
+Kotlin:
+var myVariable = 42
+myVariable = 50
+val myConstant = 42
+println("Hello, world!")
+val oranges = 5
+val fruitSummary = "I have ${myConstant + oranges}" + "pieces of fruit."
+
+Type Conversion
+
+Swift:
+let label = "The width is "
+let width = 94
+let widthLabel = label + String(width)
+
+Kotlin:
+val label = "The width is "
+val width = 94
+val widthLabel = label + width 
+
+
+Range Operator & Collections(Arrays) & Empty Collections
+Swift:
+let names = ["Anna", "Alex", "Brian", "Jack"]
+let count = names.count
+for i in 0..<count {
+    print("Person \(i + 1) is called \(names[i])")}
+names[1] = "Leo"
+let emptyArray = [String]()
+let emptyDictionary = [String: Float]()
+
+Kotlin:
+val names = arrayOf("Anna", "Alex", "Brian", "Jack")
+val count = names.count()
+for (i in 0..count - 1) {
+    println("Person ${i + 1} is called ${names[i]}")}
+names[1] = "Leo"
+val emptyArray = arrayOf<String>()
+val emptyMap = mapOf<String, Float>()
+
+Tuple Return
+Swift:
+func getGasPrices() -> (Double, Double, Double) {
+    return (3.59, 3.69, 3.79)
+}
+
+Kotlin:
+data class GasPrices(val a: Double, val b: Double,
+val c: Double)
+fun getGasPrices() = GasPrices(3.59, 3.69, 3.79)
+
+
+Higher Order function (Map) & Sort
+Swift:
+let numbers = [20, 19, 7, 12]
+numbers.map { 3 * $0 }
+var mutableArray = [1, 5, 3, 12, 2]
+mutableArray.sort()
+
+Kotlin:
+val numbers = listOf(20, 19, 7, 12)
+numbers.map { 3 * it }
+listOf(1, 5, 3, 12, 2).sorted()
+
+Classes
+Swift:
+class Shape {
+    var numberOfSides = 0
+func simpleDescription() -> String {
+    return "A shape with \(numberOfSides) sides."
+}
+}
+var shape = Shape()
+shape.numberOfSides = 7
+var shapeDescription = shape.simpleDescription()
+
+Kotlin:
+class Shape {
+    var numberOfSides = 0
+fun simpleDescription() =
+"A shape with $numberOfSides sides."
+}
+var shape = Shape()
+shape.numberOfSides = 7
+var shapeDescription = shape.simpleDescription()
+
+
+Extensions
+Swift:
+extension Double { 
+    var km: Double { return self * 1_000.0 }
+    var m: Double { return self }
+    var cm: Double { return self / 100.0 }
+    var mm: Double { return self / 1_000.0 }
+    var ft: Double { return self / 3.28084 }
+}
+let oneInch = 25.4.mm
+print("One inch is \(oneInch) meters")
+let threeFeet = 3.ft
+print("Three feet is \(threeFeet) meters")
+
+Kotlin:
+val Double.km: Double get() = this * 1000
+val Double.m: Double get() = this
+val Double.cm: Double get() = this / 100
+val Double.mm: Double get() = this / 1000
+val Double.ft: Double get() = this / 3.28084
+val oneInch = 25.4.mm
+println("One inch is $oneInch meters")
+val threeFeet = 3.0.ft
+println("Three feet is $threeFeet meters")
+
+
+Interface & Protocol & Extension
+Swift:
+protocol MyProtocol {
+    init(parameter: Int)
+    var myVariable: Int { get set }
+    var myReadOnlyProperty: Int { get }
+    
+    func myMethod()
+    func myMethodWithBody()
+}
+extension MyProtocol {
+    
+    func myMethodWithBody() {
+        // implementation goes here
+    }
+}
+
+Kotlin:
+interface MyInterface {
+    var myVariable: Int
+    val myReadOnlyProperty: Int
+    fun myMethod()
+    fun myMethodWithBody() {
+        // implementation goes here
+    }
+}
+
+Functions
+Swift:
+func greet(_ name: String,_ day: String) -> String {
+    return "Hello \(name), today is \(day)."
+}
+greet("Bob", "Tuesday")
+
+Kotlin:
+fun greet(name: String, day: String): String {
+    return "Hello $name, today is $day."
+}
+greet("Bob", "Tuesday")
