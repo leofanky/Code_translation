@@ -75,9 +75,9 @@ Classes
 Swift:
 class Shape {
     var numberOfSides = 0
-func simpleDescription() -> String {
-    return "A shape with \(numberOfSides) sides."
-}
+    func simpleDescription() -> String {
+        return "A shape with \(numberOfSides) sides."
+    }
 }
 var shape = Shape()
 shape.numberOfSides = 7
@@ -95,7 +95,7 @@ var shapeDescription = shape.simpleDescription()
 
 
 Extensions
-Swift:
+'''Swift:
 extension Double { 
     var km: Double { return self * 1_000.0 }
     var m: Double { return self }
@@ -106,9 +106,9 @@ extension Double {
 let oneInch = 25.4.mm
 print("One inch is \(oneInch) meters")
 let threeFeet = 3.ft
-print("Three feet is \(threeFeet) meters")
+print("Three feet is \(threeFeet) meters")'''
 
-Kotlin:
+'''Kotlin:
 val Double.km: Double get() = this * 1000
 val Double.m: Double get() = this
 val Double.cm: Double get() = this / 100
@@ -118,10 +118,10 @@ val oneInch = 25.4.mm
 println("One inch is $oneInch meters")
 val threeFeet = 3.0.ft
 println("Three feet is $threeFeet meters")
-
+'''
 
 Interface & Protocol & Extension
-Swift:
+'''Swift:
 protocol MyProtocol {
     init(parameter: Int)
     var myVariable: Int { get set }
@@ -135,9 +135,9 @@ extension MyProtocol {
     func myMethodWithBody() {
         // implementation goes here
     }
-}
+}'''
 
-Kotlin:
+'''Kotlin:
 interface MyInterface {
     var myVariable: Int
     val myReadOnlyProperty: Int
@@ -145,7 +145,7 @@ interface MyInterface {
     fun myMethodWithBody() {
         // implementation goes here
     }
-}
+}'''
 
 Functions
 Swift:
