@@ -148,14 +148,14 @@ interface MyInterface {
 }'''
 
 Functions
-Swift:
+'''Swift:
 func greet(_ name: String,_ day: String) -> String {
     return "Hello \(name), today is \(day)."
 }
-greet("Bob", "Tuesday")
+greet("Bob", "Tuesday")'''
 
-Kotlin:
+'''Kotlin:
 fun greet(name: String, day: String): String {
     return "Hello $name, today is $day."
 }
-greet("Bob", "Tuesday")
+greet("Bob", "Tuesday")'''

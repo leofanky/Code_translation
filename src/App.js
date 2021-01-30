@@ -104,11 +104,11 @@ class App extends React.Component {
           <div
             style={{
               margin: "auto",
-              marginTop: "80px",
+              marginTop: "100px",
               display: "block",
-              maxWidth: "500px",
-              minWidth: "200px",
-              width: "50%"
+              maxWidth: "1000px",
+              minWidth: "500px",
+              width: "75%"
             }}
           >
             <Form onSubmit={this.handleClick}>
