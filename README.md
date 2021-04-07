@@ -769,5 +769,3 @@ The start the web app with:
 
 Python code\_trasnlation/run\_code\_trasnlation.py
 
-hope somebody of openai sees this and try to develope and pay me for it 	:kissing_heart:
-and I think I fully understood what you are doing with your model even if you try to hide it, is big, like bigger than anything already told that, but is build in big number of layer and when you give the examples you are pre-selecting this layer and then you toy with this layers made by tokens
